@@ -63,7 +63,9 @@ app.get('/:name/:email/:password', function(req, res) {
 		head: 'Kelompok 9'
 	})
 	}else{
-		res.send('Sorry, this is an invalid URL');
+		//res.send('Sorry, this is an invalid URL');
+		//return res.redirect("/views/pg404.tl");
+		res.render('pg404')
 	}
 })
 
